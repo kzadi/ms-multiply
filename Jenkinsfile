@@ -7,19 +7,14 @@ pipeline{
                 sh 'chmod +x ./mvnw'
             }
         }
-        stage('clean'){
+        stage('Build'){
             steps{
-                sh './mvnw clean'
+                sh './mvnw clean compile'
             }
         }
-        stage('package'){
+        stage('Tests'){
             steps{
-                sh './mvnw package'
-            }
-        }
-        stage('install'){
-            steps{
-                sh './mvnw install'
+                sh './mvnw test'
             }
         }
     }
