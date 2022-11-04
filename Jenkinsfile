@@ -12,9 +12,9 @@ pipeline{
                 sh './mvnw clean'
             }
         }
-        stage('install'){
+        stage('package'){
             steps{
-                sh './mvnw install'
+                sh './mvnw package'
             }
         }
     }
