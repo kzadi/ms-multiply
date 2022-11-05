@@ -1,5 +1,10 @@
 package dev.jzadi.springboot.multiply.controllers;
 
+import dev.jzadi.springboot.multiply.domains.Multiplication;
+import dev.jzadi.springboot.multiply.services.IMultiplicationService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,6 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0 du 05/11/2022
  */
 @RestController
+@RequestMapping("/multiply")
 public class MultiplicationController {
+    private final IMultiplicationService multiplicationService;
 
+    public MultiplicationController(IMultiplicationService multiplicationService) {
+        this.multiplicationService = multiplicationService;
+    }
+
+    @GetMapping("/random")
+    public ResponseEntity<Multiplication> creerMultiplication() {
+        return ResponseEntity.ok().body(multiplicationService.genererMultiplication());
+    }
 }
