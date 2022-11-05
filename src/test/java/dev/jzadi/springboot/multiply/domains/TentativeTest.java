@@ -58,5 +58,4 @@ class TentativeTest {
     void isCorrect() {
         assertTrue(tentative.isCorrect());
     }
-
 }
