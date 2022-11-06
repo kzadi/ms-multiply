@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Mulitiply</title>
+    <link href="/css/app.css" rel="stylesheet"/>
+    <title>Multiply Game</title>
 </head>
 <body>
-<h1>Bonjour Multiply Game</h1>
+<div class="container">
+    <div class="jeux">
+        <div class="jeux_titre">multiply game</div>
+        <div class="jeux_tentative">
+            <div class="jeux_tentative--titre">Voici votre défi du jour</div>
+            <form class="jeux_tentative--form">
+                <p class="multiply">
+                    <span class="multiply-a">2</span> x <span class="multiply-b">3</span>
+                </p>
+                <p>
+                    <input type="text" class="form-control" name="resultat-tentative"
+                           placeholder="inscrire ici votre reponse" required>
+                </p>
+                <div class="alias">
+                    <input type="text" class="form-control" name="user-alias"
+                           placeholder="Votre alias" required>
+                </div>
+                <div class="valider">
+                    <button type="submit" class="btn btn-valider">Valider</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

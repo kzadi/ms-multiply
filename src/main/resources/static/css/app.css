@@ -1,3 +1,77 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand&display=swap");
+.jeux {
+  margin: 2rem auto;
+  width: 80%;
+}
+.jeux_titre, .jeux_tentative {
+  border-left: 0.5rem solid #424242;
+  border-right: 0.5rem solid #424242;
+}
+.jeux_titre {
+  text-align: center;
+  font-family: "Monoton", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  word-spacing: 1rem;
+  color: white;
+  background-color: #00695c;
+  padding: 1rem 0;
+}
+.jeux_tentative {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  background-color: #ffecb3;
+  padding: 1rem 0 0;
+  margin: 1rem auto;
+}
+.jeux_tentative--titre {
+  color: #424242;
+  font-weight: bolder;
+}
+.jeux_tentative--form {
+  margin: 1rem 0;
+}
+.jeux_tentative--form .multiply {
+  font-size: 3rem;
+  word-spacing: 1rem;
+  font-weight: bolder;
+}
+.jeux_tentative--form p {
+  padding: 0 1rem;
+}
+.jeux_tentative--form p .form-control {
+  border-radius: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.jeux_tentative--form .alias {
+  padding: 0 1rem;
+  width: 15%;
+  font-size: 1rem;
+}
+.jeux_tentative--form .alias .form-control {
+  border-radius: 0;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+.jeux_tentative--form .valider {
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+.jeux_tentative--form .valider .btn {
+  border-radius: 0;
+}
+.jeux_tentative--form .valider .btn-valider {
+  background-color: #00695c;
+  color: white;
+}
 
 /*# sourceMappingURL=app.css.map */
