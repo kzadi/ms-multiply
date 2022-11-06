@@ -4,6 +4,11 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+/src/main/resources/static/bs
+/src/main/resources/static/css/app.scss
+/src/main/resources/static/css/app.css.map
+
+
 ### STS ###
 .apt_generated
 .classpath

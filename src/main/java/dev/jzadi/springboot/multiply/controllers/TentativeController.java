@@ -10,6 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -30,7 +31,7 @@ public class TentativeController {
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Resultat> postTentative(@RequestBody Tentative tentative) {
+    public ResponseEntity<Resultat> postTentative(@Valid  @RequestBody Tentative tentative) {
         return ResponseEntity.ok(new Resultat(multiplicationService.reponse(tentative)));
     }
 
