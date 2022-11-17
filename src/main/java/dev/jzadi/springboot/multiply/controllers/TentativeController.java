@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -19,8 +20,8 @@ import java.util.List;
  * @author Joachim Zadi
  * @version 1.0 du 05/11/2022
  */
-@RestController
-@RequestMapping("/tentatives")
+@Controller
+@RequestMapping("/api/tentatives")
 public class TentativeController {
 
     private final IMultiplicationService multiplicationService;
